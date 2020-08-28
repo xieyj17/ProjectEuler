@@ -26,18 +26,18 @@ function myfun8(nums, l)
     for i in 1:(length(nums)-l+1)
         tn = nums[i:(i+l-1)]
         if '0' in tn
-            break
+            continue
         else
-            global temp_ans = 1
+            temp_ans = 1
             for w in tn
-                global temp_ans *= parse(Int, w)
+                temp_ans *= parse(Int, w)
             end
             if temp_ans > res
                 res = temp_ans
             end
-        end        
+        end
     end
     return res
 end
 
-myfun8(nums, 4)
+@time myfun8(nums, 13)

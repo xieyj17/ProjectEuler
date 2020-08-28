@@ -6,7 +6,7 @@ function myfun(M)
     x = x2
 
     while x < M
-         x = x1 + x2
+        x = x1 + x2
         if x % 2 == 0
             ans = ans + x
         end

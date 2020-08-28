@@ -3,7 +3,7 @@ function is_palindrome(n)
     l = length(s)
     p = Int(floor(l / 2))
     ans = true
-    for i in 1:p
+    for i = 1:p
         if s[i] != s[l-i+1]
             ans = false
             break
@@ -14,10 +14,10 @@ end
 
 function myfun4(ub, lb)
     res = []
-    for i in ub:-1:lb
-        for j in ub:-1:i
-            if is_palindrome(i*j)
-                append!(res, i*j)
+    for i = ub:-1:lb
+        for j = ub:-1:i
+            if is_palindrome(i * j)
+                append!(res, i * j)
                 #return i*j
                 #break
             end
@@ -26,4 +26,4 @@ function myfun4(ub, lb)
     return maximum(res)
 end
 
-myfun4(999,100)
+myfun4(999, 100)
