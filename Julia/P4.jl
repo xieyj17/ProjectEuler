@@ -18,12 +18,10 @@ function myfun4(ub, lb)
         for j = ub:-1:i
             if is_palindrome(i * j)
                 append!(res, i * j)
-                #return i*j
-                #break
             end
         end
     end
     return maximum(res)
 end
 
-myfun4(999, 100)
+@time myfun4(999, 100)
