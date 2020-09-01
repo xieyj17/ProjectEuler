@@ -38,7 +38,6 @@ function is_prod(n)
     return false
 end
 
-n = ['3','9','1','8','6','7','2','5','4']
 
 function myfun32(digit_list)
     all_permutes = permutations(digit_list)
@@ -54,4 +53,4 @@ function myfun32(digit_list)
     return sum(prod_list)
 end
 
-myfun32(digit_list)
+@time myfun32(digit_list)

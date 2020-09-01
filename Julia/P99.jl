@@ -26,4 +26,4 @@ function myfun99(prs)
     return res
 end
 
-myfun99(prs)
+@time myfun99(prs)

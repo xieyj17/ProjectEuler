@@ -12,4 +12,4 @@ function myfun31(n, penny_pool)
     return length(res)
 end
 
-myfun31(200, penny_pool)
+@time myfun31(200, penny_pool)

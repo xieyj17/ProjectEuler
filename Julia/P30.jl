@@ -19,4 +19,4 @@ function myfun30()
     return res
 end
 
-myfun30()
+@time myfun30()
