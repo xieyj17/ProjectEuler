@@ -1,6 +1,6 @@
 # ProjectEuler
 
-I am using ProjectEuler to learn Julia recently, and had a lot of fun. 
+I am learning Julia recently, and had a lot of fun to practice with ProjectEuler. 
 
 Right now this repo serves as a code bank for myself. 
 
