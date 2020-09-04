@@ -1,5 +1,5 @@
 nums = []
-open("/home/y227xie/Documents/GitHub/ProjectEuler/Julia/P99.txt") do file
+open("file_to_path/P99.txt") do file
     for ln in eachline(file)
         push!(nums, ln)
     end
